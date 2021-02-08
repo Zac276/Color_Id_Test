@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Identifier</title>
+    <!-- Loading the latest version of TensoFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+    <div id="console"></div>
+    <!-- Test Image/VideoFeed -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <!-- Training Buttons -->
+    <button id="class-a">Aggiungi Classificazione Rosso</button>
+    <button id="class-b">Aggiungi Classificazione Verde</button>
+    <button id="class-c">Aggiungi Classificazione Arancione</button>
+    <button id="class-d">Aggiungi Classificazione Blu</button>
+    <!-- Loading Javascript at the bottom -->
+    <script src="index.js"></script>
+</body>
+</html>
